@@ -1,10 +1,46 @@
 /* line 1, items.scss */
+.listOffset {
+  margin: 0 0 0 36px;
+}
+
+/* line 5, items.scss */
 .expense {
   font-family: "HP Simplified";
   width: 100%;
 }
-/* line 6, items.scss */
-.expense .expenseItem {
+/* line 10, items.scss */
+.expense .expenseItems {
   border-bottom: 1px solid #DADDDD;
-  line-height: 50px;
+  line-height: 25px;
+}
+/* line 15, items.scss */
+.expense .expenseSpacer {
+  margin: 0px 6px;
+  line-height: 16px;
+  border-right: 1px solid #DADDDD;
+  color: #DADDDD;
+  font-size: 60%;
+}
+/* line 24, items.scss */
+.expense .expenseDetails {
+  width: 200px;
+  display: inline-block;
+}
+/* line 28, items.scss */
+.expense .expenseTitle {
+  display: block;
+}
+/* line 31, items.scss */
+.expense .expenseDate {
+  font-size: 80%;
+}
+/* line 34, items.scss */
+.expense .expenseTime {
+  font-size: 80%;
+}
+/* line 37, items.scss */
+.expense .expenseAmount {
+  display: inline-block;
+  text-align: right;
+  padding: 0 20px 0 0;
 }

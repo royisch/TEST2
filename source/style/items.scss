@@ -1,11 +1,42 @@
+.listOffset {
+  margin: 0 0 0 36px;
+}
+
 .expense {
 
   font-family: "HP Simplified";
   width: 100%;
 
-  .expenseItem{
-
+  .expenseItems {
     border-bottom: 1px solid #DADDDD;
-    line-height: 50px;
+    line-height: 25px;
+
+  }
+  .expenseSpacer {
+    margin:0px 6px;
+    line-height: 16px;
+    border-right: 1px solid #DADDDD;
+    color: #DADDDD;
+    font-size: 60%;
+
+  }
+
+  .expenseDetails {
+    width: 200px;
+    display: inline-block;
+  }
+  .expenseTitle {
+    display: block;
+  }
+  .expenseDate {
+    font-size: 80%;
+  }
+  .expenseTime {
+    font-size: 80%;
+  }
+  .expenseAmount {
+    display: inline-block;
+    text-align: right;
+    padding: 0 20px 0 0;
   }
 }

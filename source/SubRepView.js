@@ -6,20 +6,20 @@ enyo.kind({
     components: [
         {tag:"div",name : "title" , content: localize.expMgmt.title ,classes:"exp-title"},
         {//kind : "FittableRows" ,
-			classes:"ExpenseMgmtRows",
+			classes:"expenseMgmtRows",
             components :[
                 {tag :"div" , classes:"list-Btn" , components:[
                     {tag:"div" ,name : "expensesButton" ,classes:"" , content:"Expenses" , ontap:"buttonTapped"},
                     {tag:"div" ,name : "reportsButton" ,classes:"" , content:"Reports" ,ontap:"buttonTapped"}
                 ]},
                 {tag:"div" ,classes:"imagesContainer" , components:[
-					{tag:"div" ,content:"b",classes:"cameraPicButton" , ontap:"openCamera"},
+					{tag:"div" ,classes:"cameraPicButton" , ontap:"openCamera"},
 					{tag:"div" ,classes:"" , content:"unassigned images" ,ontap:"unassignedImages"}
 				]}
             ]
         },
 		{kind: "Panels", name:"listsPanels", fit:true, realtimeFit: true, draggable: false ,classes: "listsPanels", components: [
-			{kind:"ExpensesList", name:"expenseList" ,type:"Expenses" ,classes:"expenseList"},
+			{kind:"ExpensesList", name:"expenseList" ,type:"Expenses" ,classes:"listOffset"},
 			{kind:"lista", name:"reportList" ,type:"Reports" ,style:"background:orange;"}
 			
 		]
