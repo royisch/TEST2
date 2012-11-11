@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "HP Simplified";
+  src: url("fonts/HPSimplified_Rg.ttf");
+}
+
+@font-face {
+  font-family: "HP Simplified Light";
+  src: url("fonts/HPSimplified_Lt.ttf");
+}
+
+@font-face {
+  font-family: "HP Simplified Bold";
+  src: url("fonts/HPSimplified.ttf");
+}
+
+@font-face {
+  font-family: "HP Simplified Italic";
+  src: url("fonts/HPSimplified_It.ttf");
+}
+
+/********************************  EXPENSSE MANAGEMENT VIEW *****************************************/
+/* line 23, style.scss */
+.subRepView {
+  font-family: "HP Simplified";
+  width: 100%;
+}
+/* line 28, style.scss */
+.subRepView .exp-title {
+  border-bottom: 1px solid #DBDEDE;
+  font-size: 20px;
+  color: #000000;
+  padding-left: 36px;
+  width: 100%;
+  display: inline-block;
+  line-height: 50px;
+}
+/* line 40, style.scss */
+.subRepView .list-Btn div {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #0095D5;
+  width: 50%;
+  float: left;
+  color: #444444;
+  font-size: 16px;
+}
+/* line 51, style.scss */
+.subRepView .list-Btn .selected {
+  background-color: #F2F2F2;
+}
+/* line 57, style.scss */
+.subRepView .imagesContainer {
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+}
+/* line 65, style.scss */
+.subRepView .imagesContainer div {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 70%;
+  float: left;
+  color: #444444;
+}
+/* line 74, style.scss */
+.subRepView .imagesContainer .cameraPicButton {
+  width: 30% !important;
+  background-image: url("../../assets/camera.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 35px 35px;
+}
+
+/* line 89, style.scss */
+.listsPanels {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid grey;
+  /*#0096D6;*/
+}
+
+/*
+.unassignedButton {
+  width: 65%;
+  text-align: center;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.cameraPicButton {
+  width: 30%;
+  height: 36px;
+  border-right: 1px solid grey;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-image: url('../../assets/camera.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+*/
+/* line 116, style.scss */
+.selscted-Btn {
+  background-color: grey;
+}
+
+/************************************************************************/
+/**********************  PAGE ONE ***************************************/

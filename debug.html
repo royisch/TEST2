@@ -10,9 +10,10 @@
 		<script src="enyo/enyo.js"></script>
 		<!-- application (debug) -->
 		<script src="source/package.js" type="text/javascript"></script>
-		<link href="source/DateScroller.css" rel="stylesheet">
+		<link href="source/style/DateScroller.css" rel="stylesheet">
 		<script src="source/DateScroller.js" type="text/javascript"></script>
 	</head>
+
 	<body class="enyo-unselectable">
 		<script>
 				
@@ -34,8 +35,8 @@
 				//debugger;
 				
 				});
-				//var view = new SubRepView();
-				var view = new WizardManager();
+				var view = new SubRepView();
+				//var view = new WizardManager();
 				//var view = new palm.app.ApplicationMain({fit: true})
 				view.renderInto(document.body);
 

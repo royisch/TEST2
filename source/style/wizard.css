@@ -1,0 +1,101 @@
+/* line 1, wizard.scss */
+.title {
+  font-size: 20px;
+  color: #000000;
+  display: inline-block;
+  line-height: 50px;
+}
+
+/* line 8, wizard.scss */
+.wizard-backBtn {
+  content: " ";
+  background-image: url("../../assets/arr_left.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 16px;
+  height: 50px;
+  width: 36px;
+  display: inline-block;
+  margin-bottom: -18px;
+}
+
+/* line 21, wizard.scss */
+.next {
+  font-size: 20px;
+  color: 1CA1DA;
+}
+
+/* line 26, wizard.scss */
+.wizard-page {
+  font-family: "HP Simplified";
+  margin: 0 0 0 36px;
+  border-top: 1px solid #BEE4F5;
+}
+/* line 31, wizard.scss */
+.wizard-page .page-field {
+  line-height: 50px;
+  border-bottom: 1px solid #DBDEDE;
+}
+/* line 35, wizard.scss */
+.wizard-page .page-field label {
+  color: #444444;
+  font-size: 16px;
+  display: inline-block;
+}
+/* line 40, wizard.scss */
+.wizard-page .page-field :nth-child(2) {
+  float: right;
+  color: #000000;
+  font-size: 16px;
+  display: inline-block;
+  padding-right: 18px;
+}
+/* line 47, wizard.scss */
+.wizard-page .page-field :nth-child(2) select, .wizard-page .page-field :nth-child(2) input {
+  border: none;
+}
+/* line 52, wizard.scss */
+.wizard-page .page-field .desc {
+  width: 200px;
+  display: block;
+  border: none;
+  line-height: 18px;
+  float: none;
+  height: 20px;
+}
+/* line 61, wizard.scss */
+.wizard-page .page-field .inputs {
+  border: none;
+  height: 48px;
+  width: 175px;
+  position: absolute;
+  float: none !important;
+  max-height: 45px;
+  right: 0;
+  border-left: 1px solid #E6E6E6;
+  -webkit-box-shadow: none;
+}
+/* line 73, wizard.scss */
+.wizard-page .page-field .warning {
+  height: 70px;
+  width: 100%;
+}
+
+/* line 84, wizard.scss */
+.page-one .calander {
+  height: 40px;
+  width: 26px;
+  background-image: url("../../assets/calender.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 16px;
+}
+/* line 93, wizard.scss */
+.page-one .arrow-down {
+  height: 40px;
+  width: 26px;
+  background-image: url("../../assets/arr_down.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 16px;
+}

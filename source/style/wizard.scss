@@ -1,0 +1,103 @@
+.title {
+  font-size: 20px;
+  color: #000000;
+  display: inline-block;
+  line-height: 50px;
+}
+
+.wizard-backBtn{
+  content: " ";
+  background-image: url('../../assets/arr_left.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 12px 16px;
+  height: 50px;
+  width: 36px;
+  display: inline-block;
+  margin-bottom: -18px;
+
+}
+
+.next{
+  font-size: 20px;
+  color: 1CA1DA;
+}
+
+.wizard-page {
+  font-family: "HP Simplified";
+  margin: 0 0 0 36px;
+  border-top: 1px solid #BEE4F5;
+
+  .page-field {
+    line-height: 50px;
+    border-bottom: 1px solid #DBDEDE;
+
+    label {
+      color: #444444;
+      font-size: 16px;
+      display: inline-block;
+    }
+    :nth-child(2) {
+      float: right;
+      color: #000000;
+      font-size: 16px;
+      display: inline-block;
+      padding-right: 18px;
+
+      select, input {
+        border: none;
+      }
+    }
+
+    .desc {
+      width: 200px;
+      display: block;
+      border: none;
+      line-height: 18px;
+      float: none;
+      height: 20px;
+    }
+
+    .inputs{
+      border: none;
+      height: 48px;
+      width: 175px;
+      position: absolute;
+      float:none !important;
+      max-height: 45px;
+      right: 0;
+      border-left:1px solid #E6E6E6 ;
+      -webkit-box-shadow : none;
+    }
+
+    .warning{
+      height: 70px;
+      width: 100%;
+    }
+
+  }
+
+}
+
+.page-one {
+
+  .calander {
+    height: 40px;
+    width: 26px;
+    background-image: url('../../assets/calender.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 12px 16px;
+  }
+
+  .arrow-down {
+    height: 40px;
+    width: 26px;
+    background-image: url('../../assets/arr_down.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 12px 16px;
+  }
+
+}
+
