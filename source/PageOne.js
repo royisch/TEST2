@@ -2,51 +2,46 @@
 enyo.kind({
 	name:"pageOne",
 	components:[
-		 {content: "New Expense",style:"border-bottom: 1px solid grey"},
-		  //{kind: "onyx.InputDecorator", components: [
-				{content:"Category" ,classes:"p1-category"},
-				{tag:"div",classes:"p1-input", content: "chosen", style:"padding-left: 10px;", onchange:"inputChanged"},			
-				{tag: "div", classes:"arrow-down" ,ontap:"openCategoryPicker"},
-		//]},
-	     {tag: "br"},
-		 {kind: "onyx.InputDecorator", components: [
-				{content:"Country"},		
-				{kind: "onyx.Input", placeholder: "Choose Country", style:"padding-left: 10px;", onchange:"inputChanged"},
-				{kind: "Image", src: "assets/arr_down.png" ,ontap:"openCountryPicker"}
-		]},
-		 
-		 {tag: "br"},
-		 {kind: "onyx.InputDecorator", components: [
-				{content:"Date"},
-				{kind: "onyx.Input", name : "dateInput",style:"padding-left: 10px;", onchange:"inputChanged"},
-				{kind: "Image", src: "assets/calender.png" ,ontap:"openDatePicker"}
-		]},
-		{tag: "br"},
-        {kind: "onyx.InputDecorator", components: [
-            {kind: "onyx.TextArea", name: "desc",placeholder: "Enter description here", onchange:"inputChanged"}
-        ]}
-			
+                {tag:"div" ,classes:"page-field", components:[
+                    {tag:"label" , content:localize.pageOne.category+":"},
+                    {classes:"" , allowHtml:true , content:"<select><option>"+localize.pageOne.category+"</option></option></select>"}
+                ]},
+                {tag:"div" ,classes:"page-field", components:[
+                    {tag:"label" , content:localize.pageOne.country+":"},
+                    {classes:"" , allowHtml:true , content:"<select><option>"+localize.pageOne.country+"</option></option></select>"}
+                ]},
+                {tag:"div" ,classes:"page-field", components:[
+                    {tag:"label" , content:localize.pageOne.date+":"},
+                    {classes:"" , name :"dateInput" ,allowHtml:true , content:"<input type='date' value='15/10/2012'>"}
+                ]},
+                {tag:"div" ,classes:"page-field desc", components:[
+                    {tag:"label" , content:localize.pageOne.description+":"},
+                    {tag:"input" , classes:"desc"}
+                ]}
 	],
-	
+
 	 create: function() {
-        this.inherited(arguments);       
-        this.dateChanged();
+        this.inherited(arguments);
+        var date = new Date();
+        this.expenseDate = date.getTime();
+        this.dateChanged(date);
     },
 	
-	dateChanged : function(){
-		this.$.dateInput.setContent(this.dateFormatter(this.date)); //this.date is currently not handled
+	dateChanged : function(date){
+		this.$.dateInput.setContent(this.dateFormatter(date)); //this.date is currently not handled
 	},
 	
 	inputChanged:function(inSender, inEvent) {
 		console.log("category chosen  ",arguments);//inSender.getValue() will return the date inserted
 	},
 	
-	dateFormatter : function(){
-		var d = new Date();
+	dateFormatter : function(d){
+		//var d = new Date();
 		var curr_date = d.getDate();
 		var curr_month = d.getMonth();
 		var curr_year = d.getFullYear();
-		return curr_date + "/" + curr_month + "/" + curr_year;
+		var date=  curr_date + "/" + curr_month + "/" + curr_year;
+        return "<input type='date' value="+date+">"
 	},
 	
 	openDatePicker:function(){
@@ -58,5 +53,8 @@ enyo.kind({
 	openCountryPicker:function(){
 		alert("a country picker not yet implemented");
 	},
+    addDataToModel : function(model){
+
+    }
 });
 

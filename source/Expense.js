@@ -1,12 +1,11 @@
 enyo.kind({
     name: "Expense",
     kind: enyo.Control,
-   //kind: "onyx.SwipeableItem", onCancel: "canceled", onDelete: "deleted",
     tag: "div",
-	classes: "Expense",
-    style: "border-bottom: 2px solid grey; " +
+	classes: "expense",
+   /* style: "border-bottom: 2px solid grey; " +
         "padding: 10px; margin: 10px; min-height: 20px;width:100% !important",
-	
+	*/
     published: {
         amount : 0,
         date : "",
@@ -17,22 +16,17 @@ enyo.kind({
 
     },
 	
-	
-    canceled:function(){
-      alert('canceled');
-    },
+
     components: [
-		{ tag: "span", classes: "expense-title", name: "title" },
-		{tag:"br"},
-        { tag: "span", classes: "expense-date", name: "date" },
-		{ tag: "span", classes: "expense-time" ,name: "time" },
-        { tag: "span", classes: "expense-amount" , name: "amount",style:"width:10px;height:20px;float: right;margin-right:40px;padding-top: 10px;margin-left: 5px;"},
-        
+        {tag:"div" , classes:"expenseItem" ,components:[
+            { tag: "span", classes: "expense-title", name: "title" },
+            { tag: "span", classes: "expense-date", name: "date" },
+            { tag: "span", classes: "expense-time" ,name: "time" },
+            { tag: "span", classes: "expense-amount" , name: "amount"}//,style:"width:10px;height:20px;float: right;margin-right:40px;padding-top: 10px;margin-left: 5px;"},
+        ]}
+
     ],
-    canceled :function()
-    {
-        alert('canceled');
-    },
+
     create: function() {
         this.inherited(arguments);
         this.titleChanged();

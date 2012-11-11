@@ -1,0 +1,10 @@
+/* line 1, items.scss */
+.expense {
+  font-family: "HP Simplified";
+  width: 100%;
+}
+/* line 6, items.scss */
+.expense .expenseItem {
+  border-bottom: 1px solid #DADDDD;
+  line-height: 50px;
+}
